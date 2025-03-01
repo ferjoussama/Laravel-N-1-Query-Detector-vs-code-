@@ -38,6 +38,7 @@ $users = User::all(); // Fetch all users
 foreach ($users as $user) {
     echo $user->posts; // This triggers an extra query for each user (N+1 issue)
 }
+```
 
 ## License
 
